@@ -20,7 +20,7 @@ class MercadoAuth
       @id,
       @secret,
       site: ENV["MERCADOLIBRE_OAUTH_URL"] || "https://api.mercadolibre.com",
-      authorize_url: "https://auth.mercadolibre.com/authorization?response_type=code&client_id=#{@id}",
+      authorize_url: "http://auth.mercadolibre.com/authorization?response_type=code&client_id=#{@id}",
       token_url: "oauth/token",
     )
 
